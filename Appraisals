@@ -27,6 +27,15 @@ appraise 'rails-6.1' do
   gem 'psych', '>= 4'
 end
 
+# Test rails 7.0
+appraise 'rails-7.0' do
+  gem 'activerecord-jdbcsqlite3-adapter', '~> 70.0', platform: :jruby
+  gem 'bootsnap', '>= 1.4.4'
+  gem 'rails', '~> 7.0.0'
+  gem 'rspec-rails', '~> 6.0'
+  gem 'sqlite3', '~> 1.4', platform: :ruby
+end
+
 appraise 'sinatra' do
   gem 'sinatra', '2.0.8.1'
 end

@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    name: ${{ matrix.ruby }}
+    name: ${{ matrix.ruby }} - ${{ matrix.gemfile }}
     runs-on: ubuntu-latest
     env:
       COVERAGE_RUBY_VERSION: 2.6
